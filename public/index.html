@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>App Dummy</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">Cuadrilatero</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+                <form id="crear" action="#" class="p-3 border border-primary rounded">
+                    <label for="ancho">Width: </label>
+                    <input type="number" class="form-control mb-3" id="ancho" placeholder="Enter width" name="ancho" required>
+
+                    <label for="alto">Height: </label>
+                    <input type="number" class="form-control mb-3" id="alto" placeholder="Enter height" name="alto" required>
+
+                    <div class="form-group">
+                        <label for="sel1">Select color:</label>
+                        <select class="form-control" id="color">
+                          <option value="blue">Blue</option>
+                          <option value="green">Green</option>
+                          <option value="red">Red</option>
+                        </select>
+                    </div>
+
+                    <input class="btn btn-success float-right" type="submit" value="Create">
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+            <div class="col-9">
+                <!--Dibujar cuadrado-->
+                <svg id="dibujo" height="100mm" width="100mm"></svg>
+                <h4 id="anchoLabel">Ancho:</h4>
+                <h4 id="altoLabel">Alto: </h4>
+                <h4 id="colorLabel">Color: </h4>
+                <h4 id="areaLabel">Area: </h4>
+                <h4 id="perimetroLabel">Perimetro:</h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="js/socket-custom.js"></script>
+</body>
+</html>
